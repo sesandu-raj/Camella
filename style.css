@@ -1,0 +1,349 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: monospace;
+}
+
+.main_header_wrapper {
+  background-color: #000000;
+  color: aliceblue;
+  font-family: monospace;
+}
+
+.main_header_wrapper .center_wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 5px 0;
+}
+
+.main_header_wrapper .center_wrapper .left_wrapper {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.main_header_wrapper .center_wrapper .left_wrapper .tagline {
+  padding-left: 15px;
+  font-size: 12px;
+}
+
+.main_header_wrapper .center_wrapper .right_wrapper {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: flex-end;
+}
+
+.main_header_wrapper
+  .center_wrapper
+  .right_wrapper
+  .search_form
+  .wrapper_input {
+  display: flex;
+  border-radius: 22px;
+  background: #181818;
+  border: 1px solid #181818;
+}
+
+.main_header_wrapper .center_wrapper .right_wrapper .menu_wrapper ul {
+  list-style: none;
+  display: flex;
+}
+
+.main_header_wrapper .center_wrapper .right_wrapper .menu_wrapper ul li a {
+  text-decoration: none;
+  color: #909090;
+  padding: 0 10px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_header_wrapper
+  .center_wrapper
+  .right_wrapper
+  .menu_wrapper
+  ul
+  li
+  a:hover {
+  color: darkturquoise;
+}
+
+.main_header_wrapper
+  .center_wrapper
+  .right_wrapper
+  .menu_wrapper
+  ul
+  li:last-child
+  a {
+  color: #ffffff;
+  font-weight: 900;
+  border-left: 1px solid #ffffff;
+}
+
+.main_header_wrapper
+  .center_wrapper
+  .right_wrapper
+  .menu_wrapper
+  ul
+  li:nth-last-child(2)
+  a {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.main_header_wrapper
+  .center_wrapper
+  .right_wrapper
+  .menu_wrapper
+  ul
+  li:nth-child(3)
+  a {
+  font-weight: bold;
+  color: crimson;
+}
+
+.main_header_wrapper
+  .center_wrapper
+  .right_wrapper
+  .search_form
+  .wrapper_input
+  svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  padding: 10px;
+}
+
+.main_header_wrapper
+  .center_wrapper
+  .right_wrapper
+  .search_form
+  .wrapper_input
+  input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #bdb21c;
+  padding: 10px;
+}
+
+/* Page Header CSS */
+
+.main_body_wrapper {
+  background: #181818;
+  background-image: url(../Assessts/Images/blur.webp);
+  background-size: cover;
+  position: relative;
+}
+
+.main_body_wrapper:after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000000;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  z-index: 1;
+}
+
+.main_body_wrapper .header_wrapper .center_wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0 20px;
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid #ffffff;
+}
+
+.main_body_wrapper .header_wrapper .center_wrapper h1 {
+  font-size: 50px;
+  color: #e4ec52;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.main_body_wrapper .header_wrapper .center_wrapper p {
+  width: 60%;
+  margin: 0 auto 25px;
+  color: #e4ec52;
+}
+
+.main_body_wrapper .header_wrapper .center_wrapper a {
+  color: darkorange;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* bottom section css */
+
+.main_body_wrapper .header_wrapper .center_wrapper .bottom_bar {
+  padding: 20px 0;
+  position: relative;
+  align-items: center;
+}
+
+.main_body_wrapper .header_wrapper .center_wrapper .bottom_bar .conter_item {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.main_body_wrapper
+  .header_wrapper
+  .center_wrapper
+  .bottom_bar
+  .conter_item
+  svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.main_body_wrapper
+  .header_wrapper
+  .center_wrapper
+  .bottom_bar
+  .conter_item
+  span {
+  padding-left: 10px;
+}
+
+.main_body_wrapper .header_wrapper .center_wrapper .bottom_bar .right_more {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  transform: translate(-50);
+}
+
+.main_body_wrapper .header_wrapper .center_wrapper .bottom_bar .right_more svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.main_body_wrapper
+  .header_wrapper
+  .center_wrapper
+  .bottom_bar
+  .right_more
+  span {
+  padding-left: 10px;
+}
+
+/* listing */
+
+.main_body_wrapper .listing_mian_wrapper {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_body_wrapper .listing_mian_wrapper .single_movie_card {
+  padding: 0 15px;
+}
+
+.main_body_wrapper .listing_mian_wrapper .single_movie_card .image_area {
+  border: 3px solid #690000;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.main_body_wrapper
+  .listing_mian_wrapper
+  .single_movie_card
+  .image_area
+  .hover_card {
+  position: absolute;
+  background-color: rgba(29, 29, 29, 0.65);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main_body_wrapper
+  .listing_mian_wrapper
+  .single_movie_card
+  .image_area
+  .hover_card
+  .center_content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.main_body_wrapper
+  .listing_mian_wrapper
+  .single_movie_card
+  .image_area
+  .hover_card
+  .center_content
+  svg {
+  fill: #06ff34;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto 20px;
+}
+.main_body_wrapper .listing_mian_wrapper .single_movie_card .image_area:hover {
+  border-color: #2fff2f;
+  transition: all 0.3s ease-in-out;
+}
+.main_body_wrapper
+  .listing_mian_wrapper
+  .single_movie_card
+  .image_area:hover
+  .hover_card {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_body_wrapper .listing_mian_wrapper .single_movie_card .image_area img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.main_body_wrapper .listing_mian_wrapper .single_movie_card .image_area a {
+  text-decoration: none;
+  font-size: x-large;
+  color: #2fff2f;
+  font-weight: bolder;
+}
+.main_body_wrapper .listing_mian_wrapper .single_movie_card span {
+  display: block;
+  color: #ffffff;
+}
+
+.main_body_wrapper .listing_mian_wrapper .single_movie_card span.movie_name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main_body_wrapper .listing_mian_wrapper .single_movie_card span.movie_rating {
+  color: #06ff34;
+  text-align: center;
+}
